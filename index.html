@@ -64,7 +64,77 @@
 
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-btn" data-modal-close></button>
+              <button class="modal-btn" data-modal-close>
+                <svg class="btn-svg">
+                  <use href="./images/icons.svg#vector"></use>
+                </svg>
+              </button>
+              <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+              <form class="modal-form">
+                <div class="modal-posit">
+                  <label for="name" class="modal-label">Ім'я</label>
+                  <div class="modal-svg-posit">
+                    <input type="text" name="user-name" id="name" class="modal-input" />
+                    <svg class="modal-svg">
+                      <use href="./images/icons.svg#person"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="modal-posit">
+                  <label for="tel" class="modal-label">Телефон</label>
+                  <div class="modal-svg-posit">
+                    <input
+                      type="tel"
+                      name="user-phone"
+                      id="tel"
+                      minlength="10"
+                      maxlength="13"
+                      class="modal-input"
+                    />
+                    <svg class="modal-svg">
+                      <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="modal-posit">
+                  <label for="email" class="modal-label">Пошта</label>
+                  <div class="modal-svg-posit">
+                    <input type="email" name="user-email" id="email" class="modal-input" />
+                    <svg class="modal-svg">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="modal-posit">
+                  <label for="coment" class="modal-label">Коментар</label>
+                  <textarea
+                    name="coment"
+                    id="coment"
+                    placeholder="Введіть текст"
+                    class="modal-coment"
+                  ></textarea>
+                </div>
+                <div class="modal-check">
+                  <label for="check" class="check-label">
+                    <input
+                      type="checkbox"
+                      name="consent"
+                      id="check"
+                      class="check-input visually-hidden"
+                    />
+                    <span class="check-box">
+                      <svg class="check-svg">
+                        <use href="./images/icons.svg#check-mark"></use>
+                      </svg>
+                    </span>
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="accent-link">Умови договору</a></label
+                  >
+                </div>
+                <button type="submit" class="btn-send">Відправити</button>
+              </form>
             </div>
           </div>
         </section>
@@ -406,6 +476,15 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="block-three">
+          <h2 class="footer-title">Підпишіться на розсилку</h2>
+          <div class="footer-form-posit">
+            <form>
+              <input type="text" name="email" placeholder="E-mail" class="footer-form" />
+            </form>
+            <button class="footer-btn">Підписатися</button>
+          </div>
         </div>
       </div>
     </footer>
