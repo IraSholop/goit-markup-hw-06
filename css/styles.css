@@ -376,11 +376,11 @@ img {
   background-color: var(--additional-color);
 }
 .check-svg {
-  width: 11px;
-  height: 8px;
+  width: 13px;
+  height: 10px;
   position: absolute;
   top: 50%;
-  left: 3px;
+  left: 2px;
   transform: translateY(-50%);
   opacity: 0;
 }
