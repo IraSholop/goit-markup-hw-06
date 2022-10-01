@@ -338,6 +338,12 @@ img {
 }
 .modal-svg-posit {
   position: relative;
+  color:var(--secondary-color);
+}
+.svg-transform{
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-svg {
   position: absolute;
@@ -346,13 +352,10 @@ img {
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
-.modal-input:focus + .modal-svg {
-  fill: var(--accent-color);
+.modal-input:focus + .svg-transform {
+  color: var(--accent-color);
 }
 .modal-check {
   margin-top: 10px;
