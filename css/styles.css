@@ -830,7 +830,7 @@ img {
 .form-title{
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color:var(--additional-color);
