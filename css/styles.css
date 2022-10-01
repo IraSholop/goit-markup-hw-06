@@ -374,18 +374,18 @@ img {
   border: 2px solid var(--secondary-color);
   border-radius: 2px;
   background-color: var(--additional-color);
+
+  transition-property: background-color,border ;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .check-svg {
-  width: 13px;
+  width: 12px;
   height: 10px;
   position: absolute;
   top: 50%;
   left: 2px;
   transform: translateY(-50%);
-  opacity: 0;
-}
-.check-input:checked + .check-box svg {
-  opacity: 1;
 }
 .check-input:checked + .check-box::before {
   background-color: var(--accent-color);
